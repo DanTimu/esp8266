@@ -14,10 +14,10 @@ void displayTime(unsigned long);
 void setup() 
 {
     Serial.begin(115200);
-    pinMode(D0, OUTPUT);
-    pinMode(D4, OUTPUT);
-    digitalWrite(D0, HIGH);
-    digitalWrite(D4, HIGH);
+    pinMode(LED_BUILTIN_AUX, OUTPUT); 
+    pinMode(LED_BUILTIN, OUTPUT);
+    digitalWrite(LED_BUILTIN_AUX, HIGH); //D0
+    digitalWrite(LED_BUILTIN, HIGH); //D4
 }
 
 void loop() 
